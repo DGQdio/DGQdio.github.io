@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head lang="zh">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="../css/signup.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  
+  </head>
+    <body>
+      <ul class="bubbles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+
+      <div class="contanier">
+        <div class="welcome">
+          <div class="upperbox">
+            <!--注册-->
+            <div class="signup nodisplay">
+              <h1>×¢²á</h1>
+              <form autocapitalize="off">
+                <input type="text" placeholder="用户名">
+                <input type="password" placeholder="密码">
+                <input type="password" placeholder="确认密码">
+                <button class="button submit">注册</button>
+              </form>
+            </div>
+
+            <!--登录-->
+            <div class="signin">
+              <h1>登录</h1>
+              <form class="more-padding" autocapitalize="off">
+                <input type="text" placeholder="用户名">
+                <input type="password" placeholder="密码">
+                <div class="checkbox">
+                  <input type="checkbox" id="remember" /><label>记住我</label>
+                </div>
+                <button class="button submit">登录</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="leftbox">
+            <h1 class = "title">XXX音乐</h1>
+            <p class = "desc">充电五分钟，照亮你的美</p>
+            <img class = "smaller draw" src = "../img/long.png">
+            <p class = "account">还没有账户？点击注册</p>
+            <button class="button" id = "signin">注册</button>
+          </div>
+
+          <div class="rightbox">
+            <h1 class = "title">XXX音乐/h1>
+            <p class = "desc">1800万像素，通话两小时</p>
+            <img class = "draw" src = "../img/cat.png">
+            <p class = "account">已经有账户了？点击登录</p>
+            <button class="button" id = "signup">登录</button>
+          </div>
+
+        </div>
+
+      </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../script/signup.js"></script>
+    </body>
+</html>

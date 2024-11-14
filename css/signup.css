@@ -1,0 +1,355 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background: #ff707d;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/*背景动画*/
+.bubbles
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.bubbles li
+{
+    position: absolute;
+    list-style: none;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+}
+
+.bubbles li:nth-child(1)
+{
+    left: 25%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0;
+}
+
+
+.bubbles li:nth-child(2)
+{
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12px;
+}
+
+.bubbles li:nth-child(3)
+{
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.bubbles li:nth-child(4)
+{
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.bubbles li:nth-child(5)
+{
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.bubbles li:nth-child(6)
+{
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.bubbles li:nth-child(7)
+{
+    left: 30%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.bubbles li:nth-child(8)
+{
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.bubbles li:nth-child(9)
+{
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.bubbles li:nth-child(10)
+{
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0;
+    animation-duration: 11s;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+    100%
+    {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
+
+
+
+/*容器央样式*/
+.contanier{
+    margin: auto;
+    width: 650px;
+    height: 550px;
+    position: relative;
+}
+
+.welcome{
+    background: #fff4f4;
+    width: 650px;
+    height: 415px;
+    position: absolute;
+    top: 35%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.upperbox{
+    position: absolute;
+    top: -10%;
+    left: 5%;
+    background: #bd8182;
+    width: 320px;
+    height: 500px;
+    border-radius: 5px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease-in-out;
+    z-index: 2;
+}
+
+.nodisplay{
+    display: none;
+    transition: all 0.5s ease;
+}
+
+.leftbox , .rightbox{
+    position: absolute;
+    width: 50%;
+    transition: 1s all ease;
+}
+
+.leftbox{
+    left: -2%;
+}
+
+.rightbox{
+    right: -2%;
+}
+
+/*字体和按钮*/
+h1{
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    margin-top: 95px;
+    text-transform: uppercase;
+    color: #f3eed9;
+    font-size: 2em;
+    letter-spacing: 8px;
+}
+
+
+.title {
+    font-family: "Lora",serif;
+    color: #798897;
+    font-size: 1.8em;
+    line-height: 1.1em;
+    letter-spacing: 3px;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 20%;
+}
+
+.desc{
+    margin-top: -8px;
+}
+
+.account{
+    margin-top: 45%;
+    font-size: 10px;
+}
+
+p{
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    color: #798897;
+    font-size: 0.7em;
+    letter-spacing: 2px;
+}
+
+.draw{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 32%;
+    left: 27%;
+    opacity: 0.8;
+}
+
+.smaller{
+    width: 130px;
+    height: 130px;
+    top: 38%;
+    left: 30%;
+    opacity: 0.9;
+}
+
+button{
+    padding: 12px;
+    font-family: "Open Sans" , sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 11px;
+    border-radius: 10px;
+    margin: auto;
+    outline: none;
+    display: block;    
+}
+
+button:hover{
+    background: #eac7cc;
+    color: #f6f6f6;
+    transition: background-color 1s ease-out;
+}
+
+.button{
+    margin-top: 30px;
+    background: #f6f6f6;
+    color: #bd8182;
+    border: solid 1px #eac7cc;
+}
+
+/*表单样式*/
+
+form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 7px;
+}
+
+.more-padding{
+    padding-top: 35px;
+}
+
+.more-padding input{
+    padding: 12px;
+}
+
+.more-padding .sumbit{
+    margin-top: 45px;
+}
+
+.sumbit{
+    margin-top: 25px;
+    padding: 12px;
+    border-color: #ce7d88;
+}
+
+.sumbit:hover{
+    background: #cbc0d3;
+    border-color: #bfb1c9;
+}
+
+input{
+    background: #bd8182;
+    width: 65%;
+    color: #f3eed9;
+    border: none;
+    border-bottom: 1px solid rgba(246,246,246,0.5);
+    padding: 9px;
+    font-weight: 100;
+}
+
+input::placeholder{
+    color: #f3eed9;
+    letter-spacing: 2px;
+    font-size: 1.0em;
+    font-weight: 100;
+}
+
+input:focus{
+    color: #f3eed9;
+    outline: none;
+    border-bottom: 1.2px solid rgba(206,125,136,0.7);
+    font-size: 1.0em;
+    transition: 0.8s all ease;
+}
+
+input:focus::placeholder{
+    opacity: 0;
+}
+
+label{
+    font-family: "Open Sans" , sans-serif;
+    color: #f3eed9;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+}
+
+.checkbox{
+    display: inline;
+    white-space: nowrap;
+    position: relative;
+    left: -85px;
+    top: 10px;
+}
+
+input[type=checkbox]{
+    width: 20px;
+    background: #f3eed9;
+}
+
+.checkbox input[type=checkbox]:checked + lebel {
+    color: #f3eed9;
+    transition: 0.5s all ease;
+}
+
+
